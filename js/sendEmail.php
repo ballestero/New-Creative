@@ -10,12 +10,12 @@ $message = $_POST['message'];
 $destinatario = "ballesterojj@gmail.com";
 $asunto = "Mensaje de New Creative Web";
 
-$carta = "De: $nombre \n";
+$carta = "De: $name \n";
 $carta .= "Correo: $email \n";
 $carta .= "Telefono: $phone \n";
 $carta .= "Mensaje: $message";
 
 //Enviando mail
 mail($destinatario, $asunto,$carta);
-header('Location:../index.html');
+header('Location:https://ncgcr.000webhostapp.com/');
 ?>
